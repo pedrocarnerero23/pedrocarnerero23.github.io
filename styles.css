@@ -9,13 +9,18 @@ body
   flex-direction: column;
   align-items: center;
 }
-header, footer
+header
 {
   background: #007BFF;
   color: #fff;
   width: 100%;
   text-align: center;
   padding: 1rem 0;
+}
+
+main
+{
+  flex-grow: 2;
 }
 
 /* Pie de página */
@@ -47,7 +52,7 @@ footer .social a:hover {
     border-radius: 5px;
 }
 #start-btn {
-    padding: 10rem 12rem;
+    padding: 0.8rem 1.2rem;
     background-color: #28a745;
     color: #fff;
     border: none;
