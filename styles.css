@@ -46,6 +46,8 @@ footer .social a:hover {
 /* Estilos básicos (opcional) */
     
 #game-container {
+    width: 100%;
+    height: 100%;
     background: #fff;
     border: 1px solid #ccc;
     padding: 1rem;
