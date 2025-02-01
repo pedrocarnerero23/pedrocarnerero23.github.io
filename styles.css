@@ -17,46 +17,6 @@ header, footer
   text-align: center;
   padding: 1rem 0;
 }
-main
-{
-  flex: 1;
-  width: 100%;
-  max-width: 800px;
-  margin: 2rem auto;
-  text-align: center;
-}
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 85%;
-    margin: auto;
-}
-
-nav .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-nav ul li a:hover {
-    color: #f4f4f4;
-    text-decoration: underline;
-}
 
 /* Secciones */
 section {
