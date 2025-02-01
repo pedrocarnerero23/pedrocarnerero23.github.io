@@ -30,6 +30,7 @@ footer {
     text-align: center;
     padding: 20px 0;
     flex: 1;
+    width: 100%;
 }
 
 footer .social a {
