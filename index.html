@@ -3,18 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blackjack</title>
+  <title>Mi Página</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Blackjack</h1>
+    <h1>Mi Página Web</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
   
   <main>
-    <div id="game-container">
+    <section id="info">
+      <h2>Bienvenido a mi página</h2>
+      <p>Aquí puedes encontrar información sobre distintos temas y juegos divertidos.</p>
+    </section>
+
+    <section id="blackjack-container">
+      <h2>Juego de Blackjack</h2>
       <button id="start-btn" onclick="window.open('Blackjack/index.html', '_blank')">Iniciar juego</button>
-    </div>
+    </section>
   </main>
   
   <footer>
