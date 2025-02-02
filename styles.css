@@ -79,6 +79,25 @@ button {
   border-radius: 5px;
   transition: background-color 0.3s;
 }
+/* Estilo para la sección Sobre Mí */
+#sobre-mi {
+  width: 80%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  text-align: left;
+  margin-top: 20px;
+}
+
+#sobre-mi h2 {
+  text-align: center;
+}
+
+#sobre-mi p {
+  font-size: 16px;
+  line-height: 1.5;
+}
 
 button:hover {
   background-color: #0056b3;
