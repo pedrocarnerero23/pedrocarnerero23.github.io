@@ -3,30 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página</title>
+  <title>Pedro | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Mi Página Web</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Sobre Mí</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
+    <div class="container header-content">
+      <h1>Mi Página Web</h1>
+      <nav>
+        <ul>
+          <li><a href="#info">Inicio</a></li>
+          <li><a href="#datos">Análisis de Datos</a></li>
+          <li><a href="#blackjack-container">Juegos</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   
-  <main>
-    <section id="info">
+  <main class="container">
+    <section id="info" class="card">
       <h2>Bienvenido a mi página</h2>
-      <p>¡Hola! Soy Pedro y esta es mi página personal donde comparto los proyectos en los que voy trabajando. Me gusta desarrollar aplicaciones y juegos, además de explorar nuevas tecnologías y retos de programación. Aquí iré subiendo mis avances y experimentos. ¡Espero que te gusten!.</p>
+      <p>¡Hola! Soy Pedro y esta es mi página personal donde comparto los proyectos en los que voy trabajando. Me gusta desarrollar aplicaciones y juegos, además de explorar nuevas tecnologías y retos de programación. Aquí iré subiendo mis avances y experimentos. ¡Espero que te gusten!</p>
     </section>
 
-    <section id="blackjack-container">
+    <section id="datos" class="card">
+      <h2>Análisis de Datos</h2>
+      <p>Aquí puedes ver mis proyectos del  relacionados con el procesamiento, visualización y análisis de datos.</p>
+      
+      <details class="project-details">
+        <summary class="btn-primary">Ver proyectos</summary>
+        
+        <div class="project-list">
+          <p><em>⏳ Próximamente iré subiendo aquí los proyectos, scripts y dashboards en los que estoy trabajando. ¡Vuelve pronto para ver las actualizaciones!</em></p>
+          
+          </div>
+      </details>
+    </section>
+
+    <section id="blackjack-container" class="card">
       <h2>Juego de Blackjack</h2>
-      <button id="start-btn" onclick="window.open('Blackjack/index.html', '_blank')">Iniciar juego</button>
+      <p>Prueba mi juego de Blackjack totalmente funcional programado desde cero.</p>
+      <a href="Blackjack/index.html" target="_blank" class="btn-primary">Iniciar juego</a>
     </section>
   </main>
   
@@ -35,4 +53,3 @@
   </footer>
 </body>
 </html>
-            
