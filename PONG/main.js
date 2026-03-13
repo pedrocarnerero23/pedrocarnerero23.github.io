@@ -10,6 +10,12 @@ const playerLeftNameInput = document.getElementById("playerLeftName");
 const playerRightNameInput = document.getElementById("playerRightName");
 const targetScoreSelect = document.getElementById("targetScore");
 
+window.addEventListener("keydown", function(e) {
+  // Si la tecla pulsada es la flecha arriba, abajo, o el espacio
+  if(["Space", "ArrowUp", "ArrowDown"].indexOf(e.code) > -1) {
+      e.preventDefault(); // Esto es lo que bloquea el scroll
+  }
+}, false);
 // Dimensiones del canvas
 const ANCHO = canvas.width;
 const ALTO = canvas.height;

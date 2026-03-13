@@ -1,4 +1,4 @@
-/* --- Estilos Generales --- */
+ /* --- Estilos Generales --- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,70 +7,76 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f4f7f6;
-  color: #333;
+  background-color: #f9f9f9; /* Un blanco muy suave para el fondo */
+  color: #333; /* Texto oscuro para que se lea bien */
   line-height: 1.6;
 }
 
+/* Contenedor ensanchado a 1200px */
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* --- Cabecera y Menú --- */
+/* --- Cabecera (¡Ahora en Rojo!) --- */
 header {
-  background-color: #1a1a2e;
+  background-color: #d32f2f; /* Rojo intenso y elegante */
   color: #fff;
   padding: 20px 0;
   margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.header-content {
+/* --- Layout: Barra Lateral (Sidebar) --- */
+.main-layout {
+  display: grid;
+  grid-template-columns: 350px 1fr; 
+  gap: 30px;
+  align-items: start;
+}
+
+.columna-derecha {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
+  flex-direction: column;
+  gap: 25px; 
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-nav a {
-  color: #e94560;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #fff;
-}
-
-/* --- Tarjetas (Secciones) --- */
+/* --- Tarjetas (Blancas e inmaculadas) --- */
 .card {
-  background: #fff;
+  background: #ffffff; /* Blanco puro */
   border-radius: 8px;
   padding: 25px;
-  margin-bottom: 25px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06); /* Sombra suave para que destaquen */
+  margin-bottom: 0; 
+  border-top: 4px solid #d32f2f; /* Un detalle rojo en el borde superior de cada tarjeta */
 }
 
 .card h2 {
   margin-bottom: 15px;
-  color: #1a1a2e;
-  border-bottom: 2px solid #f4f7f6;
+  color: #d32f2f; /* Títulos en rojo */
+  border-bottom: 2px solid #ffeeee; /* Línea separadora roja muy clarita */
   padding-bottom: 10px;
+  text-align: center;
 }
 
-/* --- Botones --- */
+/* --- Imágenes --- */
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px auto;
+  border: 3px solid #d32f2f; /* Le he puesto un borde rojo a tu foto, ¡queda genial! */
+}
+
+/* --- Botones (Rojos) --- */
 .btn-primary {
-  display: inline-block;
-  background-color: #0f3460;
+  display: block;
+  text-align: center;
+  background-color: #d32f2f; /* Rojo principal */
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -78,10 +84,34 @@ nav a:hover {
   font-weight: 600;
   margin-top: 15px;
   transition: background 0.3s ease;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-primary:hover {
-  background-color: #e94560;
+  background-color: #b71c1c; /* Un rojo más oscuro al pasar el ratón */
+}
+
+/* --- Desplegable de Proyectos --- */
+.project-details {
+  margin-top: 20px;
+}
+
+.project-details summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.project-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-list {
+  margin-top: 15px;
+  padding: 20px;
+  background-color: #fffcfc; /* Un fondo rojizo súper suave */
+  border-left: 4px solid #d32f2f; /* Barra lateral roja */
+  border-radius: 4px;
 }
 
 /* --- Pie de página --- */
@@ -90,9 +120,12 @@ footer {
   padding: 30px 20px;
   color: #666;
   font-size: 0.9em;
+  margin-top: 20px;
 }
 
-footer a {
-  color: #e94560;
-  text-decoration: none;
+/* --- Adaptación para Móviles --- */
+@media (max-width: 768px) {
+  .main-layout {
+    grid-template-columns: 1fr; 
+  }
 }

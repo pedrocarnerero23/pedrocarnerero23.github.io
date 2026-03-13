@@ -11,45 +11,75 @@
   <header>
     <div class="container header-content">
       <h1>Mi Página Web</h1>
-      <nav>
-        <ul>
-          <li><a href="#info">Inicio</a></li>
-          <li><a href="#datos">Análisis de Datos</a></li>
-          <li><a href="#blackjack-container">Juegos</a></li>
-        </ul>
-      </nav>
-    </div>
+      </div>
   </header>
   
-  <main class="container">
-    <section id="info" class="card">
-      <h2>Bienvenido a mi página</h2>
-      <p>¡Hola! Soy Pedro y esta es mi página personal donde comparto los proyectos en los que voy trabajando. Me gusta desarrollar aplicaciones y juegos, además de explorar nuevas tecnologías y retos de programación. Aquí iré subiendo mis avances y experimentos. ¡Espero que te gusten!</p>
-    </section>
+  <main class="container main-layout">
+    
+    <div class="columna-izquierda">
+      <section id="info" class="card">
+        <h2>Bienvenido a mi página</h2>
+        <img src="img/perfil.jpeg" alt="Foto de perfil de Pedro">
+        <p>¡Hola! Soy Pedro y esta es mi página personal donde comparto los proyectos en los que voy trabajando. Me gusta desarrollar aplicaciones y juegos, además de explorar nuevas tecnologías y retos de programación.</p>
+      </section>
+    </div>
 
-    <section id="datos" class="card">
-      <h2>Análisis de Datos</h2>
-      <p>Aquí puedes ver mis proyectos del  relacionados con el procesamiento, visualización y análisis de datos.</p>
-      
-      <details class="project-details">
-        <summary class="btn-primary">Ver proyectos</summary>
+    <div class="columna-derecha">
+      <section id="datos" class="card">
+        <h2>Análisis de Datos</h2>
+        <p>Aquí puedes ver mis proyectos relacionados con el procesamiento, visualización y análisis de datos.</p>
         
-        <div class="project-list">
-          <p><em>⏳ Próximamente iré subiendo aquí los proyectos, scripts y dashboards en los que estoy trabajando. ¡Vuelve pronto para ver las actualizaciones!</em></p>
+        <details class="project-details">
+          <summary class="btn-primary">Ver proyectos</summary>
           
-          </div>
-      </details>
-    </section>
+          <div class="project-list">
+            <div style="margin-bottom: 25px;">
+              <h3 style="color: #1a1a2e; margin-bottom: 5px;">🏡 Turismo Rural en España (2010-2025)</h3>
+              <p>Análisis detallado sobre la evolución y tendencias del turismo rural en los últimos 15 años.</p>
+              <a href="pdf/turismo-rural.pdf" target="_blank" class="btn-primary" style="background-color: #2a7a51;">Abrir PDF</a>
+            </div>
+            
+            <hr style="border: none; border-top: 2px dashed #ddd; margin-bottom: 25px;">
 
-    <section id="blackjack-container" class="card">
-      <h2>Juego de Blackjack</h2>
-      <p>Prueba mi juego de Blackjack totalmente funcional programado desde cero.</p>
-      <a href="Blackjack/index.html" target="_blank" class="btn-primary">Iniciar juego</a>
-    </section>
+            <div>
+              <h3 style="color: #1a1a2e; margin-bottom: 5px;">⚽ Análisis de Expected Goals (xG)</h3>
+              <p>Estudio estadístico avanzado basado en la métrica de goles esperados en el fútbol.</p>
+              <a href="pdf/expected-goals.pdf" target="_blank" class="btn-primary" style="background-color: #2a7a51;">Abrir PDF</a>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <section id="juegos" class="card">
+        <h2>Mis Juegos</h2>
+        
+        
+        <details class="project-details">
+          <summary class="btn-primary">Ver Juegos</summary>
+          
+          <div class="project-list">
+            <div style="margin-bottom: 25px;">
+              <h3 style="color: #1a1a2e; margin-bottom: 5px;">🏓 Pong</h3>
+              <p>Mi propia versión del PONG.</p>
+              <a href="PONG/index.html" target="_blank" class="btn-primary">Jugar a Pong</a>
+            </div>
+            
+            <hr style="border: none; border-top: 2px dashed #ddd; margin-bottom: 25px;">
+
+            <div>
+              <h3 style="color: #1a1a2e; margin-bottom: 5px;">🃏 Blackjack</h3>
+              <p>Juego de cartas de casino.</p>
+              <a href="Blackjack/index.html" target="_blank" class="btn-primary">Jugar a Blackjack</a>
+            </div>
+          </div>
+        </details>
+      </section>
+    </div>
+
   </main>
   
   <footer>
-    <p>Juego Blackjack - Hecho por <span>Pedro</span> y <a href="https://vgongar.github.io" target="_blank">Víctor</a></p>
+    <p>&copy; Pedro 2026</p>
   </footer>
 </body>
 </html>
